@@ -56,8 +56,8 @@ const LICENSE_SECTIONS = [
   {
     num: "6", title: "Derivative Works",
     clauses: [
-      { id: "6.1", text: `Any Derivative Work must be distributed under this same License, including all Process Transparency and Automatic Sanitization obligations.` },
-      { id: "6.2", text: `You may not impose additional restrictions on the rights granted by this License upon recipients of the Software or Derivative Works.` },
+      { id: "6.1", text: `Derivative Works may be created and distributed under any license terms of Your choosing, provided that the attribution requirements of Section 5 are met.` },
+      { id: "6.2", text: `For the avoidance of doubt, this License does not require Derivative Works to adopt the OpenAll License or to comply with the Process Transparency and Automatic Sanitization obligations of Sections 3 and 4.` },
     ],
   },
   {
@@ -448,7 +448,6 @@ export default function OpenAllSite() {
                   ["Process Transparency:", " Your AI tools must automatically publish the development process — conversations, decisions, logs, and inspirations."],
                   ["Automatic Sanitization:", " All process materials are auto-scanned and cleaned of secrets, keys, and personal data before publication."],
                   ["Attribution:", " Retain this license notice and credit the original author(s)."],
-                  ["Same License Forward:", " Derivative works must also use the OpenAll License."],
                 ].map(([bold, rest], i) => (
                   <li key={i} style={{ fontSize: 16, lineHeight: 1.7, marginBottom: 8, paddingLeft: 20, position: "relative" }}>
                     <span style={{ position: "absolute", left: 0, color: AMBER }}>→</span>

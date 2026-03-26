@@ -29,9 +29,6 @@ UNDER THESE CONDITIONS:
   * Attribution — Retain this license notice and credit the original
     author(s).
 
-  * Same License Forward — Derivative works must also use the OpenAll
-    License.
-
 COMMERCIAL USE:
 
   Commercial use is permitted, provided all process transparency
@@ -171,12 +168,14 @@ FULL LEGAL TEXT
 
 6. DERIVATIVE WORKS
 
-  6.1 Any Derivative Work must be distributed under this same License,
-      including all Process Transparency and Automatic Sanitization
-      obligations.
+  6.1 Derivative Works may be created and distributed under any license
+      terms of Your choosing, provided that the attribution requirements
+      of Section 5 are met.
 
-  6.2 You may not impose additional restrictions on the rights granted by
-      this License upon recipients of the Software or Derivative Works.
+  6.2 For the avoidance of doubt, this License does not require
+      Derivative Works to adopt the OpenAll License or to comply with
+      the Process Transparency and Automatic Sanitization obligations
+      of Sections 3 and 4.
 
 
 7. COMMERCIAL USE

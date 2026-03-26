@@ -12,7 +12,7 @@
 
 - **MIT License** — Admired for its simplicity. OpenAll aims for the same "you can read it in 2 minutes" quality in the human-readable summary.
 
-- **GPL / Copyleft tradition** — The copyleft mechanism (derivative works must use the same license) is borrowed directly from the GPL tradition.
+- **GPL / Copyleft tradition** — We studied the GPL's copyleft mechanism but ultimately chose a permissive approach. Copyleft creates adoption friction that would work against our goal of widespread process transparency.
 
 - **OSI's Open Source AI Definition (OSAID)** — The broader effort to define what "open" means for AI. OpenAll addresses a different angle: not the openness of AI models, but the transparency of using AI to build software.
 

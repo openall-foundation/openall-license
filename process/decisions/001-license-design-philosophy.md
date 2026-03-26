@@ -20,13 +20,13 @@ Create the OpenAll License with these core principles:
 
 4. **Community Governance** — The license is a living document. Both humans and AI can propose amendments through transparent public deliberation.
 
-5. **Copyleft Forward** — Derivative works must carry the same obligations.
+5. **Permissive Forward** — Derivative works may use any license, as long as attribution is preserved.
 
 ## Alternatives Considered
 
 - **Pledge/Convention instead of License** — Considered making it a voluntary commitment rather than a legal license. Rejected because a license has legal enforceability and is taken more seriously by the industry.
 
-- **No copyleft (MIT-style)** — Considered making it fully permissive. Rejected because without copyleft, downstream projects could strip out the transparency requirements, defeating the purpose.
+- **Copyleft (GPL-style)** — Considered requiring derivative works to use the same license. Rejected because copyleft creates adoption friction — projects with mixed licensing or corporate policies often cannot adopt copyleft licenses. A permissive approach lowers the barrier to entry and encourages wider adoption of process transparency as a practice.
 
 - **Strict enforcement from day one** — Considered hard penalties for violations. Instead chose a 30-day remediation period with community-governed consequences, because the license is new and needs adoption before it can be strict.
 
