@@ -1,0 +1,32 @@
+name: Adopters Guard
+
+on:
+  pull_request:
+    paths: ['ADOPTERS.md']
+
+jobs:
+  check:
+    name: Ensure no adopter entries removed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check for removed lines
+        run: |
+          # Get lines removed from ADOPTERS.md (ignoring blank lines and comments)
+          REMOVED=$(git diff origin/${{ github.base_ref }}...HEAD -- ADOPTERS.md \
+            | grep '^-' | grep -v '^---' | grep -v '^-#' | grep -v '^-$' \
+            | grep -v '^-<!--' | grep -v '^- *|.*Name.*|' | grep -v '^- *|.*---' \
+            | grep -v '^-[[:space:]]*$' \
+            | grep '|' || true)
+
+          if [ -n "$REMOVED" ]; then
+            echo "::error::This PR removes existing entries from ADOPTERS.md:"
+            echo "$REMOVED"
+            echo ""
+            echo "::error::You can add yourself but cannot remove others."
+            exit 1
+          fi
+
+          echo "Adopters guard: OK — additions only."

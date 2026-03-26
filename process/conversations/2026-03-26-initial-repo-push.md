@@ -270,6 +270,7 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] "Code is cheap, show me your talk" tagline on hero
 - [x] License full text expanded by default (no more click-to-expand)
 - [x] Domain migration: openall.fund → openall.world
+- [x] Adopters guard: GitHub Action blocks PRs that remove existing entries
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
