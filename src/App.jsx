@@ -32,7 +32,7 @@ const LICENSE_SECTIONS = [
     clauses: [
       { id: "3.1", text: `Any distribution of the Software or Derivative Works must be accompanied by the corresponding Process Materials, made available in a publicly accessible location.` },
       { id: "3.2", text: `Process Materials must be generated and published automatically by the AI tools and development environment used in the creation of the Software. The intent is zero manual effort for the developer: the toolchain is responsible for capturing and uploading Process Materials as a natural byproduct of the development workflow.` },
-      { id: "3.3", text: `Process Materials must be organized in a reasonable and discoverable manner. The recommended repository structure is:\n\n/src — Source code\n/conversations — AI interaction logs (auto-generated)\n/decisions — Design and architectural decision records\n/journal — Development logs and progress notes\n/inspirations — Sources of inspiration and references` },
+      { id: "3.3", text: `Process Materials must be organized in a reasonable and discoverable manner. The recommended repository structure is:\n\n/src — Source code\n/process/conversations — AI interaction logs (auto-generated)\n/process/decisions — Design and architectural decision records\n/process/journal — Development logs and progress notes\n/process/inspirations — Sources of inspiration and references` },
       { id: "3.4", text: `Process Materials must be provided in good faith. Fabricating, substantially altering, or deliberately omitting materials to misrepresent the development process constitutes a violation of this License.` },
     ],
   },
@@ -74,6 +74,7 @@ const LICENSE_SECTIONS = [
       { id: "8.2", text: `All governance proceedings, including amendment proposals, deliberations, and decisions, must themselves be conducted in accordance with the principle of Process Transparency.` },
       { id: "8.3", text: `Adopted amendments are published on the official OpenAll website as new versions of the License. Existing projects are not required to upgrade — each project may choose which version to adopt. No amendment may retroactively alter the terms under which a project originally adopted the License.` },
       { id: "8.4", text: `The governance process must be designed to resist capture by any single entity, whether individual, corporate, or governmental.` },
+      { id: "8.5", text: `Every proposed amendment must be submitted for independent review by at least one AI system before adoption. The AI reviewer shall assess the proposal for: (a) logical consistency and internal contradictions; (b) unintended consequences for different categories of adopters; (c) relevant historical precedent from other licenses and governance systems; (d) fairness across individuals, organizations, and jurisdictions. The AI review, including its full reasoning, must be published as part of the governance record. The AI reviewer serves in an advisory capacity; its assessment informs but does not override the decision-making process.` },
     ],
   },
   {
@@ -309,7 +310,7 @@ export default function OpenAllSite() {
               desc="The toolchain scans all process materials and strips API keys, passwords, tokens, personal data, and infrastructure secrets. Like a browser removing tracking parameters from a shared URL — silent and automatic." />
             <div style={{ borderLeft: `2px dashed ${BORDER}`, height: 20, marginLeft: 21 }} />
             <FlowStep icon="📤" title="Auto-publish to your repo"
-              desc="Clean process materials are uploaded to your project's /conversations, /decisions, and /journal directories. A sanitization log documents what was redacted." />
+              desc="Clean process materials are uploaded to your project's /process directory — conversations, decisions, and journal. A sanitization log documents what was redacted." />
             <div style={{ borderLeft: `2px dashed ${BORDER}`, height: 20, marginLeft: 21 }} />
             <FlowStep icon="✓" title="Developer effort: zero"
               desc="You never touch the process materials. No manual uploads. No formatting. No review. The toolchain does it all." />
@@ -364,11 +365,11 @@ export default function OpenAllSite() {
           }}>What an OpenAll project looks like</h2>
           <div style={{ background: "#fff", border: `1px solid ${BORDER}`, borderRadius: 12, padding: "28px 32px" }}>
             <StructureItem path="/src" desc="Source code" />
-            <StructureItem path="/conversations" desc="AI interaction logs" auto />
-            <StructureItem path="/decisions" desc="Decision records" auto />
-            <StructureItem path="/journal" desc="Development logs" auto />
-            <StructureItem path="/inspirations" desc="References & inspiration" />
-            <StructureItem path="/sanitization.log" desc="Redaction summary" auto />
+            <StructureItem path="/process/conversations" desc="AI interaction logs" auto />
+            <StructureItem path="/process/decisions" desc="Decision records" auto />
+            <StructureItem path="/process/journal" desc="Development logs" auto />
+            <StructureItem path="/process/inspirations" desc="References & inspiration" />
+            <StructureItem path="/process/sanitization.log" desc="Redaction summary" auto />
           </div>
           <p style={{ fontSize: 13, color: GRAY, marginTop: 12 }}>
             Items marked <span style={{ fontSize: 11, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", color: "#059669", background: "#d1fae5", padding: "1px 6px", borderRadius: 3 }}>AUTO</span> are generated and maintained by the toolchain, not the developer.

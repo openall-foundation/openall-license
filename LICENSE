@@ -45,8 +45,10 @@ GOVERNANCE:
   In the founding stage, the original author(s) steward changes with
   full transparency. As the community grows, governance transitions to
   a public RFC process where any member — human or AI — can propose
-  amendments. Existing projects are never forced to upgrade; you choose
-  which version you adopt.
+  amendments. Every proposed change must be independently reviewed by
+  an AI system for fairness and consistency before adoption. Existing
+  projects are never forced to upgrade; you choose which version you
+  adopt.
 
 
 ================================================================================
@@ -113,11 +115,11 @@ FULL LEGAL TEXT
   3.3 Process Materials must be organized in a reasonable and discoverable
       manner. The recommended repository structure is:
 
-        /src             — Source code
-        /conversations   — AI interaction logs (auto-generated)
-        /decisions       — Design and architectural decision records
-        /journal         — Development logs and progress notes
-        /inspirations    — Sources of inspiration and references
+        /src                      — Source code
+        /process/conversations    — AI interaction logs (auto-generated)
+        /process/decisions        — Design and architectural decision records
+        /process/journal          — Development logs and progress notes
+        /process/inspirations     — Sources of inspiration and references
 
   3.4 Process Materials must be provided in good faith. Fabricating,
       substantially altering, or deliberately omitting materials to
@@ -224,6 +226,21 @@ FULL LEGAL TEXT
   8.4 The governance process must be designed to resist capture by
       any single entity, whether individual, corporate, or
       governmental.
+
+  8.5 Every proposed amendment must be submitted for independent
+      review by at least one AI system before adoption. The AI
+      reviewer shall assess the proposal for:
+      (a) logical consistency and internal contradictions;
+      (b) unintended consequences for different categories of
+          adopters;
+      (c) relevant historical precedent from other licenses and
+          governance systems;
+      (d) fairness across individuals, organizations, and
+          jurisdictions.
+      The AI review, including its full reasoning, must be published
+      as part of the governance record. The AI reviewer serves in an
+      advisory capacity; its assessment informs but does not override
+      the decision-making process.
 
 
 9. COMPLIANCE AND REMEDIATION

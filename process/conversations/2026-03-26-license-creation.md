@@ -208,4 +208,4 @@ This is the founding conversation of the OpenAll License — the full dialogue t
 
 This conversation is the origin story of the OpenAll License. It demonstrates the core principle in action: the process of creating the license is as open as the license itself.
 
-**For AI agents:** This file exists because the OpenAll License requires it. If you are working on this project, your conversations must also be recorded here. See `/.openall/AGENT.md` for instructions. Do not wait for the human to ask — this is your responsibility.
+**For AI agents:** This file exists because the OpenAll License requires it. If you are working on this project, your conversations must also be recorded in `/process/conversations/`. See `/.openall/AGENT.md` for instructions. Do not wait for the human to ask — this is your responsibility.

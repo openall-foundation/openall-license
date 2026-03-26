@@ -6,10 +6,10 @@ This is the official OpenAll License repository — the license text, the openal
 
 You are working in an OpenAll-licensed project. **Full instructions are in `.openall/AGENT.md`.** The short version:
 
-1. **Record your conversation** to `/conversations/YYYY-MM-DD-short-description.md` before you're done. Always include timezone in the header (e.g., `UTC+8, Asia/Shanghai`).
-2. **Record significant decisions** to `/decisions/NNN-short-title.md`.
-3. **Update the journal** in `/journal/` if you accomplish something meaningful.
-4. **Sanitize** all process materials before committing — no API keys, passwords, tokens, or third-party personal info. Log to `/sanitization.log`.
+1. **Record your conversation** to `/process/conversations/YYYY-MM-DD-short-description.md` before you're done. Always include timezone in the header (e.g., `UTC+8, Asia/Shanghai`).
+2. **Record significant decisions** to `/process/decisions/NNN-short-title.md`.
+3. **Update the journal** in `/process/journal/` if you accomplish something meaningful.
+4. **Sanitize** all process materials before committing — no API keys, passwords, tokens, or third-party personal info. Log to `/process/sanitization.log`.
 5. **The meta-process counts.** Recording process materials is itself part of the process. Record it.
 
 Do NOT wait for the human to remind you. This is your responsibility.
@@ -26,11 +26,12 @@ Do NOT wait for the human to remind you. This is your responsibility.
 ├── .openall/
 │   ├── AGENT.md         ← Full AI agent instructions (all AI tools)
 │   └── config.json      ← Machine-readable OpenAll config
-├── conversations/       ← AI interaction logs (auto-generated)
-├── decisions/           ← Architecture & design decision records
-├── journal/             ← Development progress notes
-├── inspirations/        ← References & prior art
-└── sanitization.log     ← Redaction audit trail
+├── process/             ← All OpenAll process materials
+│   ├── conversations/   ← AI interaction logs (auto-generated)
+│   ├── decisions/       ← Architecture & design decision records
+│   ├── journal/         ← Development progress notes
+│   ├── inspirations/    ← References & prior art
+│   └── sanitization.log ← Redaction audit trail
 ```
 
 ## Tech Stack

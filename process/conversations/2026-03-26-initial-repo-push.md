@@ -91,9 +91,22 @@ On liking the license — gave an honest personal answer: the license addresses 
 
 ---
 
+### Phase 7: Directory Reorganization + AI Reviewer Clause
+
+**Human:** 我觉得这些东西放在根目录上太丑了，应该再好好设计一下，让他更漂亮，大家也能更好的用
+
+**Claude:** Moved all process materials (conversations/, decisions/, journal/, inspirations/, sanitization.log) into a single `/process/` directory. Updated all references across 8 files: LICENSE, App.jsx, CLAUDE.md, AGENT.md, config.json, README.md, and conversation files.
+
+Also wrote the AI independent reviewer clause into §8.5 of the license: every proposed amendment must be reviewed by at least one AI system for logical consistency, unintended consequences, historical precedent, and fairness. Advisory role — informs but does not override.
+
+Created decision record `process/decisions/004-process-directory-and-ai-reviewer.md`.
+
+---
+
 ## Pending Items
 
-- [ ] Write AI independent reviewer role into §8
+- [x] Write AI independent reviewer role into §8
+- [x] Reorganize directory structure
 - [ ] Bind openall.fund custom domain (DNS CNAME → openall-foundation.github.io)
 - [ ] Change vite base path back to `/` after domain binding
 - [ ] Register Buttondown (username: openall) for email subscriptions

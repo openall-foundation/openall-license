@@ -10,10 +10,10 @@ Traditional open source asks you to share your code. OpenAll asks you to share *
 
 This repository is itself licensed under the OpenAll License v1.0. That means the full development process is public:
 
-- **[/conversations](/conversations)** — AI interaction logs from creating this project
-- **[/decisions](/decisions)** — Key design and architectural decisions
-- **[/journal](/journal)** — Development progress notes
-- **[/inspirations](/inspirations)** — Sources of inspiration and references
+- **[/process/conversations](/process/conversations)** — AI interaction logs from creating this project
+- **[/process/decisions](/process/decisions)** — Key design and architectural decisions
+- **[/process/journal](/process/journal)** — Development progress notes
+- **[/process/inspirations](/process/inspirations)** — Sources of inspiration and references
 
 ## What's in this repo
 
@@ -30,7 +30,7 @@ npm run build    # production build → dist/
 ## Adopt OpenAll
 
 1. Copy the [LICENSE](./LICENSE) file into your project
-2. Set up the recommended directory structure (`/conversations`, `/decisions`, `/journal`, `/inspirations`)
+2. Set up the recommended directory structure (`/process/conversations`, `/process/decisions`, `/process/journal`, `/process/inspirations`)
 3. Add the badge to your README:
 
 ```markdown

@@ -8,7 +8,7 @@ Read `.openall/config.json` for machine-readable configuration.
 
 ### 1. Record conversations
 
-After each development session, export the full conversation transcript to `/conversations/`.
+After each development session, export the full conversation transcript to `/process/conversations/`.
 
 Filename format: `YYYY-MM-DD-short-description.md`
 
@@ -35,7 +35,7 @@ Do NOT include:
 
 ### 2. Record decisions
 
-When a significant decision is made during development, create a decision record in `/decisions/`.
+When a significant decision is made during development, create a decision record in `/process/decisions/`.
 
 Filename format: `NNN-short-title.md` (increment the number)
 
@@ -68,7 +68,7 @@ Template:
 
 ### 3. Write journal entries
 
-At the end of each development session, append a journal entry to `/journal/`.
+At the end of each development session, append a journal entry to `/process/journal/`.
 
 Filename format: `YYYY-MM-DD-summary.md`
 
@@ -84,11 +84,11 @@ Before any process materials are committed or published:
 1. Scan all new files for sensitive information
 2. Redact using the placeholder format: `[REDACTED: category]`
 3. Categories: `api_key`, `password`, `token`, `private_key`, `email`, `personal_info`, `internal_ip`, `infrastructure`, `database_credentials`
-4. Log all redactions to `/sanitization.log` with timestamp, file, and count
+4. Log all redactions to `/process/sanitization.log` with timestamp, file, and count
 
 ### 5. Maintain the sanitization log
 
-Append to `/sanitization.log` after each sanitization pass. **Always include timezone.**
+Append to `/process/sanitization.log` after each sanitization pass. **Always include timezone.**
 
 ```
 [YYYY-MM-DD HH:MM UTC±N] Sanitized <filename>: <N> redactions (<categories>)
@@ -103,9 +103,9 @@ If no redactions were needed:
 
 This is critical and easy to forget: **the act of recording process materials is itself part of the process.** If your conversation includes pushing code, creating conversation logs, or updating process materials, that conversation must also be recorded.
 
-In other words: if you are reading this instruction and about to modify this repository, your conversation will need to be saved to `/conversations/` before you're done. Do not wait for the human to remind you — this is your responsibility as an AI agent working under the OpenAll License.
+In other words: if you are reading this instruction and about to modify this repository, your conversation will need to be saved to `/process/conversations/` before you're done. Do not wait for the human to remind you — this is your responsibility as an AI agent working under the OpenAll License.
 
-See `/conversations/2026-03-26-initial-repo-push.md` for a concrete example of this meta-process in action.
+See `/process/conversations/2026-03-26-initial-repo-push.md` for a concrete example of this meta-process in action.
 
 ## What NOT to do
 
@@ -118,8 +118,8 @@ See `/conversations/2026-03-26-initial-repo-push.md` for a concrete example of t
 
 | Directory        | What goes there               | Auto-generated? |
 |-----------------|-------------------------------|-----------------|
-| /conversations  | AI interaction logs           | Yes             |
-| /decisions      | Design & architecture records | Yes             |
-| /journal        | Development progress notes    | Yes             |
-| /inspirations   | References & prior art        | Optional        |
-| /sanitization.log | Redaction audit trail       | Yes             |
+| /process/conversations  | AI interaction logs           | Yes             |
+| /process/decisions      | Design & architecture records | Yes             |
+| /process/journal        | Development progress notes    | Yes             |
+| /process/inspirations   | References & prior art        | Optional        |
+| /process/sanitization.log | Redaction audit trail       | Yes             |
