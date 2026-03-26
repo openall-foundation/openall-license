@@ -17,4 +17,4 @@ Projects and people who have adopted or support the OpenAll License.
 
 | Name | Why |
 |------|-----|
-| Zhang Yiyi | Founder. The process of building is as important as what you build. |
+| Zhang Yiyi | Founder. The process of building is as important as what you bu
