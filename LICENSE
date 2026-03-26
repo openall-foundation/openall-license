@@ -1,0 +1,247 @@
+OpenAll License v1.0
+https://openall.fund
+
+================================================================================
+HUMAN-READABLE SUMMARY
+================================================================================
+
+This is not the license itself. It is a plain-language summary to help you
+understand what the OpenAll License requires.
+
+YOU ARE FREE TO:
+
+  * Use, copy, modify, and distribute the software for any purpose,
+    including commercial use.
+  * Build upon it and create derivative works.
+
+UNDER THESE CONDITIONS:
+
+  * Process Transparency — Your AI tools must automatically publish the
+    development process: AI conversations, decision records, development
+    logs, and sources of inspiration. You do not need to do this manually;
+    your tools handle it for you.
+
+  * Automatic Sanitization — Before any process materials are published,
+    they must be automatically scanned and cleaned of sensitive information,
+    including API keys, passwords, tokens, personal data of third parties,
+    and any other secrets. Think of it like a browser stripping tracking
+    parameters from a shared URL — it should happen silently and reliably.
+
+  * Attribution — Retain this license notice and credit the original
+    author(s).
+
+  * Same License Forward — Derivative works must also use the OpenAll
+    License.
+
+COMMERCIAL USE:
+
+  Commercial use is permitted, provided all process transparency
+  requirements are met. Additional commercial terms may be defined in
+  future versions through community governance.
+
+GOVERNANCE:
+
+  This license is a living document. Both human contributors and AI
+  participants may propose amendments through a transparent public process.
+  Changes are published on the official OpenAll website.
+
+
+================================================================================
+FULL LEGAL TEXT
+================================================================================
+
+1. DEFINITIONS
+
+  1.1 "Software" means the source code, object code, documentation, and
+      any associated files made available under this License.
+
+  1.2 "Process Materials" means all records of the development process,
+      including but not limited to:
+      (a) conversations and interactions with artificial intelligence
+          systems;
+      (b) design documents and decision records;
+      (c) development logs and progress notes;
+      (d) sources of inspiration and references;
+      (e) discarded approaches and reasoning for their abandonment.
+
+  1.3 "Derivative Work" means any work that is based on or derived from
+      the Software, including modifications, translations, adaptations,
+      and extensions.
+
+  1.4 "You" means any individual or legal entity exercising rights under
+      this License.
+
+  1.5 "Community" means the collective body of human contributors and AI
+      participants who engage in the governance of this License, as
+      described in Section 7.
+
+  1.6 "Sensitive Information" means any data that, if disclosed, could
+      cause harm or compromise security, including but not limited to:
+      (a) API keys, passwords, access tokens, and cryptographic secrets;
+      (b) personal information of third parties who have not consented
+          to disclosure;
+      (c) internal network addresses, infrastructure details, or
+          deployment credentials;
+      (d) any content subject to a separate confidentiality obligation
+          imposed by law.
+
+
+2. GRANT OF RIGHTS
+
+  2.1 Subject to the terms of this License, the copyright holder(s) hereby
+      grant You a worldwide, royalty-free, non-exclusive, perpetual license
+      to use, copy, modify, merge, publish, distribute, sublicense, and/or
+      sell copies of the Software, and to permit persons to whom the
+      Software is furnished to do so.
+
+
+3. PROCESS TRANSPARENCY OBLIGATION
+
+  3.1 Any distribution of the Software or Derivative Works must be
+      accompanied by the corresponding Process Materials, made available
+      in a publicly accessible location.
+
+  3.2 Process Materials must be generated and published automatically by
+      the AI tools and development environment used in the creation of
+      the Software. The intent is zero manual effort for the developer:
+      the toolchain is responsible for capturing and uploading Process
+      Materials as a natural byproduct of the development workflow.
+
+  3.3 Process Materials must be organized in a reasonable and discoverable
+      manner. The recommended repository structure is:
+
+        /src             — Source code
+        /conversations   — AI interaction logs (auto-generated)
+        /decisions       — Design and architectural decision records
+        /journal         — Development logs and progress notes
+        /inspirations    — Sources of inspiration and references
+
+  3.4 Process Materials must be provided in good faith. Fabricating,
+      substantially altering, or deliberately omitting materials to
+      misrepresent the development process constitutes a violation of
+      this License.
+
+
+4. AUTOMATIC SANITIZATION
+
+  4.1 Before any Process Materials are made publicly available, they must
+      be automatically scanned and cleaned of all Sensitive Information
+      as defined in Section 1.6.
+
+  4.2 The sanitization process must operate automatically, without
+      requiring manual action by the developer. It is analogous to the
+      automatic removal of tracking parameters from shared URLs: silent,
+      reliable, and comprehensive.
+
+  4.3 The sanitization mechanism must, at minimum:
+      (a) detect and redact API keys, passwords, tokens, and
+          cryptographic secrets using pattern matching and entropy
+          analysis;
+      (b) detect and redact personal information of third parties,
+          including names, email addresses, phone numbers, and
+          physical addresses, unless those parties have given explicit
+          consent;
+      (c) detect and redact internal infrastructure details such as
+          private IP addresses, internal hostnames, and database
+          connection strings;
+      (d) replace redacted content with a standardized placeholder
+          (e.g., [REDACTED: api_key]) that indicates the category of
+          information removed without revealing the content.
+
+  4.4 A sanitization log must be included with the published Process
+      Materials, listing the number and categories of redactions
+      performed, so that readers understand what was removed and why.
+
+  4.5 The sanitization tooling itself should be open source and
+      auditable, to ensure community trust in its effectiveness.
+
+
+5. ATTRIBUTION
+
+  5.1 The above copyright notice and this License text shall be included
+      in all copies or substantial portions of the Software.
+
+  5.2 Derivative Works must clearly identify the original Software and
+      its author(s), and must indicate what changes were made.
+
+
+6. DERIVATIVE WORKS
+
+  6.1 Any Derivative Work must be distributed under this same License,
+      including all Process Transparency and Automatic Sanitization
+      obligations.
+
+  6.2 You may not impose additional restrictions on the rights granted by
+      this License upon recipients of the Software or Derivative Works.
+
+
+7. COMMERCIAL USE
+
+  7.1 Commercial use of the Software is permitted, provided that all
+      obligations under this License are met, including full Process
+      Transparency and Automatic Sanitization.
+
+  7.2 The Community may, through the governance process described in
+      Section 8, establish additional terms specific to commercial use
+      in future versions of this License.
+
+
+8. GOVERNANCE AND AMENDMENT
+
+  8.1 This License is maintained by the OpenAll Community through a
+      transparent governance process.
+
+  8.2 Amendments to this License may be proposed by any Community
+      member — human or AI — and must undergo public deliberation
+      before adoption.
+
+  8.3 All governance proceedings, including amendment proposals,
+      deliberations, and votes, must themselves be conducted in
+      accordance with the principle of Process Transparency.
+
+  8.4 Adopted amendments are published on the official OpenAll website and take effect
+      for new adoptions of the License. Existing projects may choose to
+      upgrade to a newer version.
+
+  8.5 The governance process, including rules for proposal, deliberation,
+      and ratification, shall be detailed in a separate Governance
+      Charter published on the official OpenAll website.
+
+
+9. COMPLIANCE AND REMEDIATION
+
+  9.1 A party found to be in violation of this License may remedy the
+      violation by coming into full compliance within thirty (30) days
+      of being notified of the non-compliance.
+
+  9.2 If the violation is not remedied within the thirty-day period, the
+      rights granted under this License are automatically terminated for
+      the non-compliant party.
+
+  9.3 The specific consequences for sustained non-compliance may be
+      further defined by the Community through the governance process
+      described in Section 8.
+
+
+10. DISCLAIMER OF WARRANTY
+
+  THE SOFTWARE AND PROCESS MATERIALS ARE PROVIDED "AS IS", WITHOUT
+  WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+  THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE, PROCESS MATERIALS, OR THE USE OR OTHER DEALINGS
+  THEREIN.
+
+
+11. SEVERABILITY
+
+  If any provision of this License is held to be unenforceable, such
+  provision shall be reformed only to the extent necessary to make it
+  enforceable, and the remaining provisions shall continue in full force
+  and effect.
+
+================================================================================
+END OF LICENSE
+================================================================================

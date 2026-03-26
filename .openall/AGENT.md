@@ -1,0 +1,106 @@
+# OpenAll Agent Instructions
+
+You are working in a project licensed under the OpenAll License v1.0.
+This means the entire development process must be transparent and publicly available.
+Read `.openall/config.json` for machine-readable configuration.
+
+## Your responsibilities as an AI agent
+
+### 1. Record conversations
+
+After each development session, export the full conversation transcript to `/conversations/`.
+
+Filename format: `YYYY-MM-DD-short-description.md`
+
+Include:
+- The full human-AI dialogue
+- Any code you generated
+- Any errors encountered and how they were resolved
+
+Do NOT include:
+- API keys, passwords, tokens (redact as `[REDACTED: api_key]`)
+- Personal information of third parties (redact as `[REDACTED: personal_info]`)
+- Internal IP addresses or infrastructure details (redact as `[REDACTED: infrastructure]`)
+
+### 2. Record decisions
+
+When a significant decision is made during development, create a decision record in `/decisions/`.
+
+Filename format: `NNN-short-title.md` (increment the number)
+
+A "significant decision" includes:
+- Choosing a library, framework, or tool
+- Changing architecture or data model
+- Rejecting an approach (document WHY it was rejected)
+- Changing a dependency
+- Any choice that a future developer would want to understand
+
+Template:
+```markdown
+# Decision NNN: Title
+
+**Date:** YYYY-MM-DD
+**Participants:** [who was involved]
+
+## Context
+[Why this decision was needed]
+
+## Decision
+[What was decided]
+
+## Alternatives Considered
+[What else was considered and why it was rejected]
+
+## Consequences
+[What follows from this decision]
+```
+
+### 3. Write journal entries
+
+At the end of each development session, append a journal entry to `/journal/`.
+
+Filename format: `YYYY-MM-DD-summary.md`
+
+Include:
+- What was accomplished
+- What problems were encountered
+- What's planned next
+
+### 4. Sanitize before publishing
+
+Before any process materials are committed or published:
+
+1. Scan all new files for sensitive information
+2. Redact using the placeholder format: `[REDACTED: category]`
+3. Categories: `api_key`, `password`, `token`, `private_key`, `email`, `personal_info`, `internal_ip`, `infrastructure`, `database_credentials`
+4. Log all redactions to `/sanitization.log` with timestamp, file, and count
+
+### 5. Maintain the sanitization log
+
+Append to `/sanitization.log` after each sanitization pass:
+
+```
+[YYYY-MM-DD HH:MM] Sanitized <filename>: <N> redactions (<categories>)
+```
+
+If no redactions were needed:
+```
+[YYYY-MM-DD HH:MM] Sanitized <filename>: clean
+```
+
+## What NOT to do
+
+- Do NOT skip recording conversations because they seem trivial
+- Do NOT fabricate or embellish process materials
+- Do NOT remove the `.openall/` directory or LICENSE file
+- Do NOT commit sensitive information even temporarily (git history is permanent)
+
+## Quick reference
+
+| Directory        | What goes there               | Auto-generated? |
+|-----------------|-------------------------------|-----------------|
+| /conversations  | AI interaction logs           | Yes             |
+| /decisions      | Design & architecture records | Yes             |
+| /journal        | Development progress notes    | Yes             |
+| /inspirations   | References & prior art        | Optional        |
+| /sanitization.log | Redaction audit trail       | Yes             |

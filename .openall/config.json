@@ -1,0 +1,52 @@
+{
+  "openall": "1.0",
+  "description": "OpenAll License configuration. AI agents should read this file to understand how to comply with the OpenAll License in this project.",
+  "process_materials": {
+    "conversations": {
+      "path": "/conversations",
+      "auto": true,
+      "format": "markdown",
+      "description": "AI interaction logs. AI agents must automatically export conversation transcripts here after each development session."
+    },
+    "decisions": {
+      "path": "/decisions",
+      "auto": true,
+      "format": "markdown",
+      "naming": "NNN-short-title.md",
+      "description": "Architectural and design decision records. AI agents should create a new file here whenever a significant decision is made (e.g., choosing a library, changing architecture, rejecting an approach)."
+    },
+    "journal": {
+      "path": "/journal",
+      "auto": true,
+      "format": "markdown",
+      "naming": "YYYY-MM-DD-summary.md",
+      "description": "Development logs. AI agents should append a summary at the end of each development session."
+    },
+    "inspirations": {
+      "path": "/inspirations",
+      "auto": false,
+      "format": "markdown",
+      "description": "Sources of inspiration, references, and prior art. Can be maintained manually or by AI."
+    }
+  },
+  "sanitization": {
+    "enabled": true,
+    "log_path": "/sanitization.log",
+    "redact": [
+      "api_keys",
+      "passwords",
+      "tokens",
+      "private_keys",
+      "email_addresses_of_third_parties",
+      "internal_ips",
+      "database_connection_strings"
+    ],
+    "placeholder_format": "[REDACTED: {category}]",
+    "description": "Before publishing any process materials, AI agents must scan and redact all sensitive information. Each redaction must be logged."
+  },
+  "license": {
+    "name": "OpenAll License v1.0",
+    "file": "/LICENSE",
+    "url": "https://openall.fund"
+  }
+}
