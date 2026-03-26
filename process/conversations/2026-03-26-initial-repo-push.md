@@ -207,7 +207,7 @@ This failure is recorded here honestly. It happened twice, and the second time a
 
 ---
 
-### Phase 12: Manual Check Recommendation + Domain Binding
+### Phase 12: Manual Check Recommendation + Domain Binding + DNS Fix
 
 **Human:** 建议开发者每次在一阶段做完之后自己再手动检查一下，也只能这样了。如果有好的办法的话，后续大家可以再修改进去。顺便为什么CNAME加不进去呢？[showed screenshot of DNS panel with "Record data is invalid" error for CNAME @ → openall-foundation.github.io]
 
@@ -216,6 +216,22 @@ This failure is recorded here honestly. It happened twice, and the second time a
 1. Added "Developer review checkpoint" to AGENT.md §6: after each milestone, human should manually review conversation log for substance, not just summary. Acknowledged as a known limitation pending better automated solutions.
 
 2. DNS issue: CNAME records cannot be used on the root/apex domain (`@`) — DNS spec (RFC 1034) prohibits it because CNAME can't coexist with SOA/NS records. Solution: use 4 A records pointing to GitHub Pages IPs (185.199.108-111.153) instead. Set custom domain on GitHub via API. Changed vite base path from `/openall-license/` back to `/` since custom domain has no subpath.
+
+---
+
+### Phase 13: Replace Buttondown with GitHub-native Engagement
+
+**Human:** 算了，我觉得我们不要用这个东西了，直接让用户subscribe就是上传到github根目录的一个文件，然后这个list也开源，不是更好吗
+
+**Claude:** Pointed out a conflict: storing subscriber emails in a public repo violates the license's own §4 (Automatic Sanitization) and §1.6 (Sensitive Information — personal info of third parties). Proposed GitHub-native alternatives instead.
+
+**Human:** 我觉得不用邮箱，而是github
+
+**Claude:** Replaced the Buttondown email form with two buttons:
+- "Star on GitHub" → repo page
+- "Join Discussions" → GitHub Discussions
+
+Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. This is more consistent with OpenAll's philosophy — engagement happens on GitHub where everything is already open and transparent.
 
 ---
 
@@ -231,9 +247,9 @@ This failure is recorded here honestly. It happened twice, and the second time a
 - [x] Add developer review checkpoint to AGENT.md
 - [x] Set custom domain on GitHub Pages
 - [x] Change vite base path back to `/`
-- [ ] Add A records in DNS panel (4x GitHub Pages IPs) ← human action
+- [x] Add A records in DNS panel (4x GitHub Pages IPs)
 - [ ] Wait for DNS propagation + verify openall.fund loads
-- [ ] Register Buttondown (username: openall) for email subscriptions
+- [x] ~~Register Buttondown~~ → Replaced with GitHub Star + Discussions
 - [ ] First social media post with #OpenAll
 
 ---

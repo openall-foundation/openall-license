@@ -606,45 +606,33 @@ export default function OpenAllSite() {
               margin: "0 0 8px",
             }}>Stay in the loop</h3>
             <p style={{ fontSize: 14, color: GRAY, margin: "0 0 20px", maxWidth: 420, lineHeight: 1.6 }}>
-              Get updates on OpenAll — new tools, governance proposals, and community milestones. No spam.
+              Watch or star the repo to follow OpenAll — governance proposals, new tools, and community milestones.
             </p>
-            <form
-              action="https://buttondown.com/api/emails/embed-subscribe/openall"
-              method="post"
-              target="popupwindow"
-              onSubmit={() => { window.open('https://buttondown.com/openall', 'popupwindow') }}
-              style={{
-                display: "flex", gap: 10, width: "100%", maxWidth: 440, flexWrap: "wrap", justifyContent: "center",
-              }}
-            >
-              <input
-                type="email"
-                name="email"
-                placeholder="you@example.com"
-                required
-                style={{
-                  flex: 1, minWidth: 200,
-                  fontFamily: "'DM Sans', sans-serif", fontSize: 14,
-                  padding: "10px 16px", borderRadius: 8,
-                  border: `1px solid ${BORDER}`,
-                  outline: "none",
-                  background: WARM,
-                }}
-              />
-              <button type="submit" style={{
+            <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center" }}>
+              <a href="https://github.com/openall-foundation/openall-license" target="_blank" rel="noopener noreferrer" style={{
                 fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
                 padding: "10px 24px", borderRadius: 8,
                 background: ACCENT, color: "#fff",
                 border: "none", cursor: "pointer",
+                textDecoration: "none",
                 transition: "opacity 0.2s",
               }}
                 onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}
                 onMouseLeave={e => e.currentTarget.style.opacity = "1"}
-              >Subscribe</button>
-            </form>
-            <p style={{ fontSize: 11, color: GRAY, margin: "12px 0 0", opacity: 0.6 }}>
-              Powered by Buttondown. Unsubscribe anytime.
-            </p>
+              >Star on GitHub</a>
+              <a href="https://github.com/openall-foundation/openall-license/discussions" target="_blank" rel="noopener noreferrer" style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+                padding: "10px 24px", borderRadius: 8,
+                background: "#fff", color: ACCENT,
+                border: `1px solid ${ACCENT}`,
+                cursor: "pointer",
+                textDecoration: "none",
+                transition: "opacity 0.2s",
+              }}
+                onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}
+                onMouseLeave={e => e.currentTarget.style.opacity = "1"}
+              >Join Discussions</a>
+            </div>
           </div>
         </FadeIn>
       </section>
