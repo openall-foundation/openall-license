@@ -228,6 +228,16 @@ export default function OpenAllSite() {
 
         <FadeIn delay={250}>
           <p style={{
+            fontFamily: "'Source Serif 4', serif", fontSize: "clamp(14px, 1.8vw, 17px)",
+            color: "rgba(255,255,255,0.45)", maxWidth: 500, margin: "0 auto 20px", lineHeight: 1.6,
+            fontStyle: "italic",
+          }}>
+            "Code is cheap. Show me your talk."
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={300}>
+          <p style={{
             fontFamily: "'DM Sans', sans-serif", fontSize: "clamp(14px, 1.8vw, 16px)",
             color: "rgba(255,255,255,0.5)", maxWidth: 520, margin: "0 auto 40px", lineHeight: 1.6,
           }}>

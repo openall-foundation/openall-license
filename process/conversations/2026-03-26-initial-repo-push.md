@@ -267,6 +267,7 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] robots.txt allowing all crawlers
 - [x] GitHub Action for compliance check + sanitization scanning
 - [x] Claude Code hook blocking commits without conversation logs
+- [x] "Code is cheap, show me your talk" tagline on hero
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
