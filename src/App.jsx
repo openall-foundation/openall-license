@@ -283,6 +283,13 @@ export default function OpenAllSite() {
           <p style={{ fontSize: 18, lineHeight: 1.75, color: "#374151" }}>
             And it asks <strong>nothing extra from you</strong>. Your AI tools do all the work: they automatically capture the process, automatically scrub sensitive data, and automatically publish. You just code.
           </p>
+          <a href="https://github.com/openall-foundation/openall-license" target="_blank" rel="noopener noreferrer" style={{
+            fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+            color: ACCENT, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6, marginTop: 8,
+          }}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            This project is itself built with OpenAll — view the full process on GitHub →
+          </a>
         </FadeIn>
       </section>
 
@@ -504,8 +511,18 @@ export default function OpenAllSite() {
             fontFamily: "'DM Sans', sans-serif", fontSize: 28, fontWeight: 700,
             margin: "20px 0 16px", letterSpacing: "-0.01em",
           }}>Adopt OpenAll in your project</h2>
-          <p style={{ fontSize: 16, lineHeight: 1.7, color: "#374151", marginBottom: 28 }}>
+          <p style={{ fontSize: 16, lineHeight: 1.7, color: "#374151", marginBottom: 16 }}>
             Add a <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 14, background: ACCENT_LIGHT, padding: "2px 6px", borderRadius: 4 }}>LICENSE</code> file with the full text, set up the recommended structure, and add the badge:
+          </p>
+          <div style={{ background: DARK, borderRadius: 10, padding: "16px 20px", marginBottom: 20 }}>
+            <code style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.8 }}>
+              <span style={{ color: GRAY }}>{"# Copy the LICENSE and process structure from the official repo"}</span>{"\n"}
+              <span style={{ color: GREEN }}>curl</span>{" -sL github.com/openall-foundation/openall-license/raw/main/LICENSE > LICENSE"}{"\n"}
+              <span style={{ color: GREEN }}>mkdir</span>{" -p process/conversations process/decisions process/journal process/inspirations"}
+            </code>
+          </div>
+          <p style={{ fontSize: 14, lineHeight: 1.7, color: GRAY, marginBottom: 28 }}>
+            Then add the badge to your README:
           </p>
           <div style={{ background: DARK, borderRadius: 10, padding: "20px 24px", position: "relative" }}>
             <code style={{
@@ -673,9 +690,26 @@ export default function OpenAllSite() {
         <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 14, color: GRAY, margin: "0 0 8px" }}>
           OpenAll License v1.0
         </p>
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: GRAY, margin: 0, opacity: 0.7 }}>
+        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: GRAY, margin: "0 0 16px", opacity: 0.7 }}>
           This license was itself created with full process transparency. The AI conversation that produced it is public.
         </p>
+        <div style={{ display: "flex", gap: 16, justifyContent: "center", alignItems: "center" }}>
+          <a href="https://github.com/openall-foundation/openall-license" target="_blank" rel="noopener noreferrer" style={{
+            color: GRAY, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6,
+            fontFamily: "'DM Sans', sans-serif", fontSize: 13, opacity: 0.7,
+          }}>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <span style={{ color: GRAY, opacity: 0.3 }}>·</span>
+          <a href="https://github.com/openall-foundation/openall-license/discussions" target="_blank" rel="noopener noreferrer" style={{
+            color: GRAY, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 13, opacity: 0.7,
+          }}>Discussions</a>
+          <span style={{ color: GRAY, opacity: 0.3 }}>·</span>
+          <a href="https://github.com/openall-foundation/openall-license/blob/main/process/conversations" target="_blank" rel="noopener noreferrer" style={{
+            color: GRAY, textDecoration: "none", fontFamily: "'DM Sans', sans-serif", fontSize: 13, opacity: 0.7,
+          }}>Process Logs</a>
+        </div>
       </footer>
     </div>
   );
