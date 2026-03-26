@@ -265,6 +265,8 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] ADOPTERS.md + website join button
 - [x] License badge links to LICENSE file, not website
 - [x] robots.txt allowing all crawlers
+- [x] GitHub Action for compliance check + sanitization scanning
+- [x] Claude Code hook blocking commits without conversation logs
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
