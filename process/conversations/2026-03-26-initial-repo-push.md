@@ -235,6 +235,18 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 
 ---
 
+### Phase 14: ADOPTERS.md + Developer Experience Concerns
+
+**Human:** 可以让他们加入这个项目，让这个项目成为世界上最大的项目。只要在网页上点击一下就可以加入，或者是写在文件里，你看看那个合适。以及这个更改每次需要加入md是需要占用ai cli时间的，这个对开发者体验很差我觉得后期应该是把这个做成完全独立的，可惜claude code不支持，也是希望他们看到之后支持这个原生功能，那就太好了。
+
+**Claude:** Two items:
+
+1. **ADOPTERS.md**: Created a public adopters list at repo root. Two tables: Projects (with link) and Supporters (with "why"). Website gets a new "Join the adopters" button (green, prominent) that links directly to GitHub's web editor for ADOPTERS.md — click, add your line, submit PR. Zero friction.
+
+2. **Developer experience concern** (recorded, not yet solved): The founder identified a real pain point — manually writing conversation logs in markdown eats AI CLI time and degrades DX. The ideal solution is native tool support: Claude Code, Cursor, etc. should have built-in OpenAll mode that automatically exports conversations, sanitizes them, and commits to `/process/`. This doesn't exist yet. Recorded as an aspiration and an implicit call to tool vendors. If Anthropic sees this and adds native OpenAll support to Claude Code, it would be a massive unlock for adoption.
+
+---
+
 ## Pending Items (requires human action)
 
 - [x] Write AI independent reviewer role into §8
@@ -250,6 +262,7 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] Add A records in DNS panel (4x GitHub Pages IPs)
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [x] ~~Register Buttondown~~ → Replaced with GitHub Star + Discussions
+- [x] ADOPTERS.md + website join button
 - [ ] First social media post with #OpenAll
 
 ---

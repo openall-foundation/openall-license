@@ -586,11 +586,36 @@ export default function OpenAllSite() {
                 Browse #openall projects
               </a>
             </div>
+
+            {/* Join as adopter/supporter */}
+            <div style={{
+              background: ACCENT_LIGHT, border: `1px solid ${ACCENT}33`, borderRadius: 12,
+              padding: "24px 28px", marginTop: 8, textAlign: "center",
+            }}>
+              <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, margin: "0 0 8px" }}>
+                Join the adopters
+              </h3>
+              <p style={{ fontSize: 14, lineHeight: 1.7, color: GRAY, margin: "0 0 16px" }}>
+                Add your name or project to the public adopters list. One click, one PR — you're in.
+              </p>
+              <a href="https://github.com/openall-foundation/openall-license/edit/main/ADOPTERS.md" target="_blank" rel="noopener noreferrer" style={{
+                fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,
+                padding: "10px 24px", borderRadius: 8,
+                background: ACCENT, color: "#fff",
+                textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 8,
+                transition: "opacity 0.2s",
+              }}
+                onMouseEnter={e => e.currentTarget.style.opacity = "0.85"}
+                onMouseLeave={e => e.currentTarget.style.opacity = "1"}
+              >
+                Add yourself to ADOPTERS.md
+              </a>
+            </div>
           </div>
         </FadeIn>
       </section>
 
-      {/* EMAIL SUBSCRIBE */}
+      {/* STAY IN THE LOOP */}
       <section style={{
         maxWidth: 800, margin: "0 auto", padding: "48px 24px",
         borderTop: `1px solid ${BORDER}`,
