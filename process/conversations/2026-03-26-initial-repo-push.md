@@ -118,12 +118,24 @@ Created decision record `process/decisions/004-process-directory-and-ai-reviewer
 
 ---
 
-## Pending Items
+### Phase 9: Final Pre-Launch
+
+**Human:** 好的那你现在还想做什么
+
+**Claude:** Wrote process material growth management guidelines into AGENT.md §7 — archiving strategy for conversations (6-month active window → archive with summary), decisions kept indefinitely, never delete only archive.
+
+---
+
+## Pending Items (requires human action)
 
 - [x] Write AI independent reviewer role into §8
 - [x] Reorganize directory structure
+- [x] Remove URL from LICENSE
+- [x] Full project audit
+- [x] OSI OSAID research
+- [x] Write bloat management strategy into AGENT.md
 - [ ] Bind openall.fund custom domain (DNS CNAME → openall-foundation.github.io)
-- [ ] Change vite base path back to `/` after domain binding
+- [ ] Change vite base path back to `/` after domain binding (tell Claude to do this)
 - [ ] Register Buttondown (username: openall) for email subscriptions
 - [ ] First social media post with #OpenAll
 

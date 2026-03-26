@@ -107,6 +107,28 @@ In other words: if you are reading this instruction and about to modify this rep
 
 See `/process/conversations/2026-03-26-initial-repo-push.md` for a concrete example of this meta-process in action.
 
+## 7. Manage process material growth
+
+Process materials grow over time. Left unmanaged, `/process/` can become larger than the source code itself. Follow these guidelines:
+
+**Conversations:**
+- Keep full conversation files in `/process/conversations/` for the current development phase
+- When a conversation is older than 6 months and no longer actively referenced, move it to `/process/conversations/archive/YYYY/`
+- When archiving, add a one-paragraph summary to the top of the file so it remains useful without reading the full transcript
+- For very large projects, consider using Git LFS for archived conversation files
+
+**Decisions:**
+- Decision records are small and rarely need archiving — keep them in `/process/decisions/` indefinitely
+- They are the most valuable process material over time (understanding WHY something was done)
+
+**Journal:**
+- Journal entries are naturally small. No special management needed.
+
+**General rules:**
+- Never delete process materials — the license requires them to be available. Archive, don't delete.
+- Prefer summarization over deletion. A 3-line summary of a 500-line conversation still has value.
+- When in doubt, keep it. Storage is cheap; lost context is expensive.
+
 ## What NOT to do
 
 - Do NOT skip recording conversations because they seem trivial
