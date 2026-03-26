@@ -456,6 +456,13 @@ export default function OpenAllSite() {
                 ))}
               </ul>
 
+              <div style={{ background: ACCENT_LIGHT, border: `1px solid rgba(26,107,79,0.2)`, borderRadius: 8, padding: "14px 20px", margin: "0 0 28px", display: "flex", alignItems: "flex-start", gap: 10 }}>
+                <span style={{ fontSize: 18, flexShrink: 0, lineHeight: 1.4 }}>↗</span>
+                <p style={{ fontSize: 15, lineHeight: 1.6, color: "#374151", margin: 0 }}>
+                  <strong style={{ color: ACCENT }}>Not copyleft.</strong> Derivative works may use any license of your choosing. OpenAll does not require downstream projects to adopt this license — only attribution.
+                </p>
+              </div>
+
               <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 20, fontWeight: 700, margin: "0 0 20px", color: ACCENT }}>Zero developer effort:</h3>
               <p style={{ fontSize: 16, lineHeight: 1.7, color: "#374151", margin: "0 0 28px" }}>
                 You don't manually upload or maintain any process materials. Your AI toolchain handles capture, sanitization, and publishing automatically. You just code.
