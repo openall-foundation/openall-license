@@ -275,6 +275,7 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] Branch protection on main (require reviews + status checks)
 - [x] CODEOWNERS for LICENSE, .openall/, workflows, AI configs
 - [x] PR template with compliance checklist
+- [x] Fix §4.3(b) App.jsx missing examples vs LICENSE
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
