@@ -276,6 +276,7 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] CODEOWNERS for LICENSE, .openall/, workflows, AI configs
 - [x] PR template with compliance checklist
 - [x] Fix §4.3(b) App.jsx missing examples vs LICENSE
+- [x] SEO: sitemap.xml, robots.txt, Open Graph / Twitter meta tags, canonical URL
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
