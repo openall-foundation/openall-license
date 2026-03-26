@@ -113,6 +113,12 @@ If you find yourself thinking "I'll update the log after this commit" — stop. 
 
 This rule exists because this project's own AI agent failed to record substantive conversation content twice during initial development, despite being reminded. A structural coupling (log + code in same commit) prevents this failure mode.
 
+### Developer review checkpoint
+
+AI agents are imperfect at self-monitoring. **After each development phase or milestone, the human developer should manually review the conversation log to verify that the substance of the dialogue was captured, not just a brief summary.** If the AI recorded "did X" instead of recording the actual reasoning, alternatives discussed, and decisions made — ask it to redo the entry.
+
+This is a known limitation. If better automated mechanisms are developed in the future, they should replace this manual step.
+
 See `/process/conversations/2026-03-26-initial-repo-push.md` Phases 6 and 11 for the actual failure record.
 
 ## 7. Manage process material growth

@@ -207,6 +207,18 @@ This failure is recorded here honestly. It happened twice, and the second time a
 
 ---
 
+### Phase 12: Manual Check Recommendation + Domain Binding
+
+**Human:** 建议开发者每次在一阶段做完之后自己再手动检查一下，也只能这样了。如果有好的办法的话，后续大家可以再修改进去。顺便为什么CNAME加不进去呢？[showed screenshot of DNS panel with "Record data is invalid" error for CNAME @ → openall-foundation.github.io]
+
+**Claude:** Two things:
+
+1. Added "Developer review checkpoint" to AGENT.md §6: after each milestone, human should manually review conversation log for substance, not just summary. Acknowledged as a known limitation pending better automated solutions.
+
+2. DNS issue: CNAME records cannot be used on the root/apex domain (`@`) — DNS spec (RFC 1034) prohibits it because CNAME can't coexist with SOA/NS records. Solution: use 4 A records pointing to GitHub Pages IPs (185.199.108-111.153) instead. Set custom domain on GitHub via API. Changed vite base path from `/openall-license/` back to `/` since custom domain has no subpath.
+
+---
+
 ## Pending Items (requires human action)
 
 - [x] Write AI independent reviewer role into §8
@@ -216,8 +228,11 @@ This failure is recorded here honestly. It happened twice, and the second time a
 - [x] OSI OSAID research
 - [x] Write bloat management strategy into AGENT.md
 - [x] Add commit-coupled logging mechanism to AGENT.md
-- [ ] Bind openall.fund custom domain (DNS CNAME → openall-foundation.github.io)
-- [ ] Change vite base path back to `/` after domain binding (tell Claude to do this)
+- [x] Add developer review checkpoint to AGENT.md
+- [x] Set custom domain on GitHub Pages
+- [x] Change vite base path back to `/`
+- [ ] Add A records in DNS panel (4x GitHub Pages IPs) ← human action
+- [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] Register Buttondown (username: openall) for email subscriptions
 - [ ] First social media post with #OpenAll
 
