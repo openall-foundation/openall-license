@@ -534,13 +534,13 @@ export default function OpenAllSite() {
             }}>
               {[
                 { label: "𝕏 / Twitter", bg: "#0f1419", color: "#fff",
-                  url: "https://twitter.com/intent/tweet?text=" + encodeURIComponent("Open source your thinking, not just your code. The #OpenAll License requires transparency of the entire creative process — AI conversations, decisions, and inspirations.\n\nhttps://openall.fund") },
+                  url: "https://twitter.com/intent/tweet?text=" + encodeURIComponent("Open source your thinking, not just your code. The #OpenAll License requires transparency of the entire creative process — AI conversations, decisions, and inspirations.\n\nhttps://openall.world") },
                 { label: "Reddit", bg: "#ff4500", color: "#fff",
-                  url: "https://reddit.com/submit?url=" + encodeURIComponent("https://openall.fund") + "&title=" + encodeURIComponent("OpenAll License — Open source your thinking, not just your code #OpenAll") },
+                  url: "https://reddit.com/submit?url=" + encodeURIComponent("https://openall.world") + "&title=" + encodeURIComponent("OpenAll License — Open source your thinking, not just your code #OpenAll") },
                 { label: "LinkedIn", bg: "#0a66c2", color: "#fff",
-                  url: "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent("https://openall.fund") },
+                  url: "https://www.linkedin.com/sharing/share-offsite/?url=" + encodeURIComponent("https://openall.world") },
                 { label: "Hacker News", bg: "#ff6600", color: "#fff",
-                  url: "https://news.ycombinator.com/submitlink?u=" + encodeURIComponent("https://openall.fund") + "&t=" + encodeURIComponent("OpenAll License – Open source your thinking, not just your code") },
+                  url: "https://news.ycombinator.com/submitlink?u=" + encodeURIComponent("https://openall.world") + "&t=" + encodeURIComponent("OpenAll License – Open source your thinking, not just your code") },
               ].map((s, i) => (
                 <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" style={{
                   fontFamily: "'DM Sans', sans-serif", fontSize: 14, fontWeight: 600,

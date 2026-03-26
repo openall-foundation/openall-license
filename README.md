@@ -17,7 +17,7 @@ This repository is itself licensed under the OpenAll License v1.0. That means th
 
 ## What's in this repo
 
-This is the source code for [openall.fund](https://openall.fund), the official website of the OpenAll License. Built with React + Vite.
+This is the source code for [openall.world](https://openall.world), the official website of the OpenAll License. Built with React + Vite.
 
 ## Quick start
 
@@ -43,7 +43,7 @@ npm run build    # production build → dist/
 
 - Share with **#OpenAll** on social media
 - Browse [#openall projects on GitHub](https://github.com/topics/openall)
-- Subscribe to updates at [openall.fund](https://openall.fund)
+- Subscribe to updates at [openall.world](https://openall.world)
 
 ## For AI agents
 

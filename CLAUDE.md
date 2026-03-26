@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This is the official OpenAll License repository — the license text, the openall.fund website, and the project's own process materials. This project is itself licensed under the OpenAll License v1.0.
+This is the official OpenAll License repository — the license text, the openall.world website, and the project's own process materials. This project is itself licensed under the OpenAll License v1.0.
 
 ## OpenAll Compliance (READ FIRST)
 
