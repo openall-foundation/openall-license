@@ -458,40 +458,27 @@ export default function OpenAllSite() {
           <FadeIn>
             <div style={{ background: "#fff", border: `1px solid ${BORDER}`, borderRadius: 12, padding: "36px 36px" }}>
               {LICENSE_SECTIONS.map((sec) => (
-                <div key={sec.num} style={{ marginBottom: 24 }}>
-                  <button
-                    onClick={() => setActiveSection(activeSection === sec.num ? null : sec.num)}
-                    style={{
-                      display: "flex", alignItems: "center", gap: 12, width: "100%",
-                      background: "none", border: "none", padding: "8px 0", cursor: "pointer", textAlign: "left",
-                    }}
-                  >
+                <div key={sec.num} style={{ marginBottom: 28 }}>
+                  <div style={{
+                    display: "flex", alignItems: "center", gap: 12,
+                    padding: "8px 0", borderBottom: `1px solid ${BORDER}`, marginBottom: 12,
+                  }}>
                     <span style={{
                       fontFamily: "'JetBrains Mono', monospace", fontSize: 13, fontWeight: 500,
                       color: ACCENT, background: ACCENT_LIGHT, padding: "3px 10px", borderRadius: 6,
                       minWidth: 36, textAlign: "center",
                     }}>§{sec.num}</span>
                     <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 16, fontWeight: 700, color: DARK }}>{sec.title}</span>
-                    <span style={{
-                      marginLeft: "auto", fontSize: 18, color: GRAY,
-                      transform: activeSection === sec.num ? "rotate(180deg)" : "rotate(0)",
-                      transition: "transform 0.25s ease",
-                    }}>▾</span>
-                  </button>
-                  <div style={{
-                    maxHeight: activeSection === sec.num ? 3000 : 0,
-                    overflow: "hidden", transition: "max-height 0.4s ease",
-                  }}>
-                    <div style={{ padding: "12px 0 0 48px" }}>
-                      {sec.clauses.map((c) => (
-                        <div key={c.id} style={{ marginBottom: 14 }}>
-                          <p style={{ fontSize: 14, lineHeight: 1.75, color: "#374151", margin: 0, whiteSpace: "pre-wrap" }}>
-                            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: GRAY, marginRight: 8 }}>{c.id}</span>
-                            {c.text}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
+                  </div>
+                  <div style={{ padding: "0 0 0 48px" }}>
+                    {sec.clauses.map((c) => (
+                      <div key={c.id} style={{ marginBottom: 14 }}>
+                        <p style={{ fontSize: 14, lineHeight: 1.75, color: "#374151", margin: 0, whiteSpace: "pre-wrap" }}>
+                          <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: 12, color: GRAY, marginRight: 8 }}>{c.id}</span>
+                          {c.text}
+                        </p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}
