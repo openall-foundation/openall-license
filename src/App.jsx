@@ -30,7 +30,7 @@ const LICENSE_SECTIONS = [
   {
     num: "3", title: "Process Transparency Obligation",
     clauses: [
-      { id: "3.1", text: `Any distribution of the Software or Derivative Works must be accompanied by the corresponding Process Materials, made available in a publicly accessible location.` },
+      { id: "3.1", text: `Any distribution of the Software must be accompanied by the corresponding Process Materials, made available in a publicly accessible location.` },
       { id: "3.2", text: `Process Materials must be generated and published automatically by the AI tools and development environment used in the creation of the Software. The intent is zero manual effort for the developer: the toolchain is responsible for capturing and uploading Process Materials as a natural byproduct of the development workflow.` },
       { id: "3.3", text: `Process Materials must be organized in a reasonable and discoverable manner. The recommended repository structure is:\n\n/src — Source code\n/process/conversations — AI interaction logs (auto-generated)\n/process/decisions — Design and architectural decision records\n/process/journal — Development logs and progress notes\n/process/inspirations — Sources of inspiration and references` },
       { id: "3.4", text: `Process Materials must be provided in good faith. Fabricating, substantially altering, or deliberately omitting materials to misrepresent the development process constitutes a violation of this License.` },
@@ -64,7 +64,6 @@ const LICENSE_SECTIONS = [
     num: "7", title: "Commercial Use",
     clauses: [
       { id: "7.1", text: `Commercial use of the Software is permitted, provided that all obligations under this License are met, including full Process Transparency and Automatic Sanitization.` },
-      { id: "7.2", text: `The Community may, through the governance process described in Section 8, establish additional terms specific to commercial use in future versions of this License.` },
     ],
   },
   {
@@ -80,9 +79,9 @@ const LICENSE_SECTIONS = [
   {
     num: "9", title: "Compliance and Remediation",
     clauses: [
-      { id: "9.1", text: `A party found to be in violation of this License may remedy the violation by coming into full compliance within thirty (30) days of being notified of the non-compliance.` },
-      { id: "9.2", text: `If the violation is not remedied within the thirty-day period, the rights granted under this License are automatically terminated for the non-compliant party.` },
-      { id: "9.3", text: `The specific consequences for sustained non-compliance may be further defined by the Community through the governance process described in Section 8.` },
+      { id: "9.1", text: `The obligations of this License — including Process Transparency (Section 3) and Automatic Sanitization (Section 4) — apply to parties distributing the Software under this License. They do not apply to Derivative Works distributed under a different license, as provided in Section 6.` },
+      { id: "9.2", text: `A party found to be in violation of this License may remedy the violation by coming into full compliance within thirty (30) days of being notified of the non-compliance.` },
+      { id: "9.3", text: `If the violation is not remedied within the thirty-day period, the rights granted under this License are automatically terminated for the non-compliant party.` },
     ],
   },
   {
@@ -445,7 +444,7 @@ export default function OpenAllSite() {
               <h3 style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 20, fontWeight: 700, margin: "0 0 20px", color: ACCENT }}>Under these conditions:</h3>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 28px" }}>
                 {[
-                  ["Process Transparency:", " Your AI tools must automatically publish the development process — conversations, decisions, logs, and inspirations."],
+                  ["Process Transparency:", " When you distribute the Software, your AI tools must automatically publish the development process. This applies to your own use; derivative works are not required to follow it."],
                   ["Automatic Sanitization:", " All process materials are auto-scanned and cleaned of secrets, keys, and personal data before publication."],
                   ["Attribution:", " Retain this license notice and credit the original author(s)."],
                 ].map(([bold, rest], i) => (

@@ -15,10 +15,12 @@ YOU ARE FREE TO:
 
 UNDER THESE CONDITIONS:
 
-  * Process Transparency — Your AI tools must automatically publish the
-    development process: AI conversations, decision records, development
-    logs, and sources of inspiration. You do not need to do this manually;
-    your tools handle it for you.
+  * Process Transparency — When you distribute the Software, your AI
+    tools must automatically publish the development process: AI
+    conversations, decision records, development logs, and sources of
+    inspiration. You do not need to do this manually; your tools handle
+    it for you. This obligation applies to your own use of the Software;
+    derivative works are not required to follow it (see Section 6).
 
   * Automatic Sanitization — Before any process materials are published,
     they must be automatically scanned and cleaned of sensitive information,
@@ -32,8 +34,7 @@ UNDER THESE CONDITIONS:
 COMMERCIAL USE:
 
   Commercial use is permitted, provided all process transparency
-  requirements are met. Additional commercial terms may be defined in
-  future versions through community governance.
+  requirements are met.
 
 GOVERNANCE:
 
@@ -98,9 +99,9 @@ FULL LEGAL TEXT
 
 3. PROCESS TRANSPARENCY OBLIGATION
 
-  3.1 Any distribution of the Software or Derivative Works must be
-      accompanied by the corresponding Process Materials, made available
-      in a publicly accessible location.
+  3.1 Any distribution of the Software must be accompanied by the
+      corresponding Process Materials, made available in a publicly
+      accessible location.
 
   3.2 Process Materials must be generated and published automatically by
       the AI tools and development environment used in the creation of
@@ -184,10 +185,6 @@ FULL LEGAL TEXT
       obligations under this License are met, including full Process
       Transparency and Automatic Sanitization.
 
-  7.2 The Community may, through the governance process described in
-      Section 8, establish additional terms specific to commercial use
-      in future versions of this License.
-
 
 8. GOVERNANCE AND AMENDMENT
 
@@ -243,17 +240,19 @@ FULL LEGAL TEXT
 
 9. COMPLIANCE AND REMEDIATION
 
-  9.1 A party found to be in violation of this License may remedy the
+  9.1 The obligations of this License — including Process Transparency
+      (Section 3) and Automatic Sanitization (Section 4) — apply to
+      parties distributing the Software under this License. They do not
+      apply to Derivative Works distributed under a different license,
+      as provided in Section 6.
+
+  9.2 A party found to be in violation of this License may remedy the
       violation by coming into full compliance within thirty (30) days
       of being notified of the non-compliance.
 
-  9.2 If the violation is not remedied within the thirty-day period, the
+  9.3 If the violation is not remedied within the thirty-day period, the
       rights granted under this License are automatically terminated for
       the non-compliant party.
-
-  9.3 The specific consequences for sustained non-compliance may be
-      further defined by the Community through the governance process
-      described in Section 8.
 
 
 10. DISCLAIMER OF WARRANTY
