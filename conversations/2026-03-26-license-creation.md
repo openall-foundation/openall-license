@@ -1,9 +1,9 @@
 # Conversation: OpenAll License Creation
 
 **Date:** 2026-03-26
+**Time:** 21:39 – 22:22 (UTC+8, Asia/Shanghai)
 **Participants:** Founder (Zhang Yiyi), Claude (Anthropic, Claude Sonnet)
 **Platform:** claude.ai
-**Duration:** ~45 minutes (21:39 – 22:22)
 
 ---
 

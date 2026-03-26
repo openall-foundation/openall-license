@@ -12,6 +12,17 @@ After each development session, export the full conversation transcript to `/con
 
 Filename format: `YYYY-MM-DD-short-description.md`
 
+Every conversation file MUST include this header:
+
+```markdown
+**Date:** YYYY-MM-DD
+**Time:** HH:MM – HH:MM (UTC±N, Timezone/City)
+**Participants:** [who was involved]
+**Tool:** [platform or tool used]
+```
+
+**Timezone is mandatory.** Use IANA timezone names (e.g., `UTC+8, Asia/Shanghai` or `UTC-5, America/New_York`). This project has global contributors — timestamps without timezones are ambiguous and useless.
+
 Include:
 - The full human-AI dialogue
 - Any code you generated
@@ -39,7 +50,7 @@ Template:
 ```markdown
 # Decision NNN: Title
 
-**Date:** YYYY-MM-DD
+**Date:** YYYY-MM-DD (UTC±N, Timezone/City)
 **Participants:** [who was involved]
 
 ## Context
@@ -77,15 +88,15 @@ Before any process materials are committed or published:
 
 ### 5. Maintain the sanitization log
 
-Append to `/sanitization.log` after each sanitization pass:
+Append to `/sanitization.log` after each sanitization pass. **Always include timezone.**
 
 ```
-[YYYY-MM-DD HH:MM] Sanitized <filename>: <N> redactions (<categories>)
+[YYYY-MM-DD HH:MM UTC±N] Sanitized <filename>: <N> redactions (<categories>)
 ```
 
 If no redactions were needed:
 ```
-[YYYY-MM-DD HH:MM] Sanitized <filename>: clean
+[YYYY-MM-DD HH:MM UTC±N] Sanitized <filename>: clean
 ```
 
 ## 6. Record the meta-process
