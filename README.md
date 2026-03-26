@@ -1,6 +1,6 @@
 # OpenAll — Open Source Your Thinking
 
-[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](https://openall.fund)
+[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](./LICENSE)
 
 **The first license that requires transparency of the entire creative process — not just the code.**
 
@@ -34,7 +34,7 @@ npm run build    # production build → dist/
 3. Add the badge to your README:
 
 ```markdown
-[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](https://openall.fund)
+[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](./LICENSE)
 ```
 
 4. Add the `openall` topic to your GitHub repo

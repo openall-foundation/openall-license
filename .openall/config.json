@@ -47,6 +47,6 @@
   "license": {
     "name": "OpenAll License v1.0",
     "file": "/LICENSE",
-    "url": "https://openall.fund"
+    "url": "./LICENSE"
   }
 }

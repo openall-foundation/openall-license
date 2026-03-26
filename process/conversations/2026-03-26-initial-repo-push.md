@@ -263,6 +263,8 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [x] ~~Register Buttondown~~ → Replaced with GitHub Star + Discussions
 - [x] ADOPTERS.md + website join button
+- [x] License badge links to LICENSE file, not website
+- [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 
 ---

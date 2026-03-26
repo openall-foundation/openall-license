@@ -171,7 +171,7 @@ export default function OpenAllSite() {
   const [copied, setCopied] = useState(false);
   const [tab, setTab] = useState("summary");
 
-  const badgeText = `[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](https://openall.fund)`;
+  const badgeText = `[![OpenAll License v1.0](https://img.shields.io/badge/license-OpenAll%20v1.0-1a6b4f)](./LICENSE)`;
   const handleCopy = () => { navigator.clipboard.writeText(badgeText); setCopied(true); setTimeout(() => setCopied(false), 2000); };
 
   return (
