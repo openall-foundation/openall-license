@@ -103,6 +103,21 @@ Created decision record `process/decisions/004-process-directory-and-ai-reviewer
 
 ---
 
+### Phase 8: OSI Open Source AI Definition Research
+
+**Human:** 我看到他们有一个opensource ai。你看看他们是怎么说的，有没有和我们想法已经一样的：https://opensource.org/ai
+
+**Claude:** Researched OSI's Open Source AI Definition (OSAID) v1.0. Key findings:
+
+- OSAID focuses on **the AI system itself** — requiring openness of code, training data info, and model weights/parameters
+- It defines four freedoms: use, study, modify, share (mirroring the classic open source four freedoms)
+- It requires "data information" sufficient for a skilled person to build a substantially equivalent system
+- **It says NOTHING about the development process** — no requirement for recording conversations, documenting decisions, or making the creative process transparent
+
+**Conclusion:** OSI and OpenAll are addressing completely different problems. OSAID asks: "Is the AI model open?" OpenAll asks: "Is the process of building software (with or without AI) open?" They are complementary, not overlapping. A project could comply with both — open model weights AND open development process.
+
+---
+
 ## Pending Items
 
 - [x] Write AI independent reviewer role into §8
