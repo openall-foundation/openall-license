@@ -271,6 +271,10 @@ Enabled GitHub Discussions on the repo. Removed all Buttondown dependencies. Thi
 - [x] License full text expanded by default (no more click-to-expand)
 - [x] Domain migration: openall.fund → openall.world
 - [x] Adopters guard: GitHub Action blocks PRs that remove existing entries
+- [x] Full security audit + critical file protection
+- [x] Branch protection on main (require reviews + status checks)
+- [x] CODEOWNERS for LICENSE, .openall/, workflows, AI configs
+- [x] PR template with compliance checklist
 - [ ] Wait for DNS propagation + verify openall.fund loads
 - [ ] First social media post with #OpenAll
 

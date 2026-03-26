@@ -1,0 +1,16 @@
+# OpenAll critical files — require maintainer approval for any changes
+
+# License text
+LICENSE                          @openall-foundation/maintainers
+
+# Compliance config and AI instructions
+.openall/                        @openall-foundation/maintainers
+CLAUDE.md                        @openall-foundation/maintainers
+.cursorrules                     @openall-foundation/maintainers
+.github/copilot-instructions.md  @openall-foundation/maintainers
+
+# CI/CD and workflows
+.github/workflows/               @openall-foundation/maintainers
+
+# Process materials (prevent tampering)
+process/                         @openall-foundation/maintainers

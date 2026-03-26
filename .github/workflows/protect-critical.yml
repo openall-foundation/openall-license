@@ -1,0 +1,60 @@
+name: Protect Critical Files
+
+on:
+  pull_request:
+
+jobs:
+  check:
+    name: Block unauthorized changes to critical files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Check for protected file modifications
+        run: |
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          failed=0
+
+          # LICENSE — never modifiable via PR
+          if echo "$CHANGED" | grep -q '^LICENSE$'; then
+            echo "::error::LICENSE cannot be modified via PR. Contact maintainers directly."
+            failed=1
+          fi
+
+          # .openall/ — compliance config
+          if echo "$CHANGED" | grep -q '^\.openall/'; then
+            echo "::error::.openall/ files cannot be modified via PR. These define compliance rules."
+            failed=1
+          fi
+
+          # Workflows — CI/CD integrity
+          if echo "$CHANGED" | grep -q '^\.github/workflows/'; then
+            echo "::error::Workflow files cannot be modified via PR. Contact maintainers."
+            failed=1
+          fi
+
+          # AI instruction files
+          for f in CLAUDE.md .cursorrules .github/copilot-instructions.md; do
+            if echo "$CHANGED" | grep -q "^${f}$"; then
+              echo "::error::${f} cannot be modified via PR. These control AI agent behavior."
+              failed=1
+            fi
+          done
+
+          # Process materials — no deletions
+          DELETED=$(git diff --name-only --diff-filter=D origin/${{ github.base_ref }}...HEAD -- process/)
+          if [ -n "$DELETED" ]; then
+            echo "::error::Process materials cannot be deleted:"
+            echo "$DELETED"
+            echo "::error::OpenAll License §3.4 requires process materials to be preserved."
+            failed=1
+          fi
+
+          if [ "$failed" -eq 1 ]; then
+            echo ""
+            echo "If you need to modify protected files, open an issue to discuss with maintainers."
+            exit 1
+          fi
+
+          echo "Critical file protection: OK"
