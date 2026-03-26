@@ -105,7 +105,15 @@ This is critical and easy to forget: **the act of recording process materials is
 
 In other words: if you are reading this instruction and about to modify this repository, your conversation will need to be saved to `/process/conversations/` before you're done. Do not wait for the human to remind you — this is your responsibility as an AI agent working under the OpenAll License.
 
-See `/process/conversations/2026-03-26-initial-repo-push.md` for a concrete example of this meta-process in action.
+### Hard rule: couple conversation logs to commits
+
+**Every git commit MUST include an update to the conversation log in the same commit.** Do not commit code changes separately from the conversation record. The conversation log update is a precondition for committing, not an afterthought.
+
+If you find yourself thinking "I'll update the log after this commit" — stop. Update the log first, then commit both together.
+
+This rule exists because this project's own AI agent failed to record substantive conversation content twice during initial development, despite being reminded. A structural coupling (log + code in same commit) prevents this failure mode.
+
+See `/process/conversations/2026-03-26-initial-repo-push.md` Phases 6 and 11 for the actual failure record.
 
 ## 7. Manage process material growth
 
