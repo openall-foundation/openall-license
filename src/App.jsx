@@ -70,11 +70,10 @@ const LICENSE_SECTIONS = [
   {
     num: "8", title: "Governance and Amendment",
     clauses: [
-      { id: "8.1", text: `This License is maintained by the OpenAll Community through a transparent governance process.` },
-      { id: "8.2", text: `Amendments to this License may be proposed by any Community member — human or AI — and must undergo public deliberation before adoption.` },
-      { id: "8.3", text: `All governance proceedings, including amendment proposals, deliberations, and votes, must themselves be conducted in accordance with the principle of Process Transparency.` },
-      { id: "8.4", text: `Adopted amendments are published at the official OpenAll website and take effect for new adoptions of the License. Existing projects may choose to upgrade to a newer version.` },
-      { id: "8.5", text: `The governance process, including rules for proposal, deliberation, and ratification, shall be detailed in a separate Governance Charter published on the official OpenAll website.` },
+      { id: "8.1", text: `This License is a living document. Its governance evolves in stages as the community grows:\n\n(a) Founding Stage — While the community is forming, the original author(s) steward the License. All changes must be documented publicly with full rationale, and community feedback must be solicited and addressed before adoption.\n\n(b) Community Stage — Once a sufficient body of adopters and contributors exists, governance transitions to a community-driven process in which any member — human or AI — may propose amendments through a public RFC (Request for Comments) process, with a deliberation period of no less than thirty (30) days.\n\n(c) The criteria for transitioning between stages, and the rules for proposal, deliberation, and ratification, shall be detailed in a Governance Charter published on the official OpenAll website.` },
+      { id: "8.2", text: `All governance proceedings, including amendment proposals, deliberations, and decisions, must themselves be conducted in accordance with the principle of Process Transparency.` },
+      { id: "8.3", text: `Adopted amendments are published on the official OpenAll website as new versions of the License. Existing projects are not required to upgrade — each project may choose which version to adopt. No amendment may retroactively alter the terms under which a project originally adopted the License.` },
+      { id: "8.4", text: `The governance process must be designed to resist capture by any single entity, whether individual, corporate, or governmental.` },
     ],
   },
   {
