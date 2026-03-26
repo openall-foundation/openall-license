@@ -88,6 +88,14 @@ If no redactions were needed:
 [YYYY-MM-DD HH:MM] Sanitized <filename>: clean
 ```
 
+## 6. Record the meta-process
+
+This is critical and easy to forget: **the act of recording process materials is itself part of the process.** If your conversation includes pushing code, creating conversation logs, or updating process materials, that conversation must also be recorded.
+
+In other words: if you are reading this instruction and about to modify this repository, your conversation will need to be saved to `/conversations/` before you're done. Do not wait for the human to remind you — this is your responsibility as an AI agent working under the OpenAll License.
+
+See `/conversations/2026-03-26-initial-repo-push.md` for a concrete example of this meta-process in action.
+
 ## What NOT to do
 
 - Do NOT skip recording conversations because they seem trivial
